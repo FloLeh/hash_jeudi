@@ -136,7 +136,8 @@ mails
 
 
 def alphabetical_order
-	@journalists_list.sort
+	puts "Classement par ordre alphabetique :"
+	puts @journalists_list.sort_by(&:downcase)
 end
 
-puts alphabetical_order
+alphabetical_order
