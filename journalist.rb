@@ -100,3 +100,25 @@ puts "Il y a #{x} handles qui commencent par une majuscule"
 end
 
 count_upcase
+
+#code fabrice
+
+
+def mails
+	x = 0
+
+	@journalists_list.each do |journalist| #passe sur chaque élément "journalist" du tableau "@journalist"
+		if journalist.include? "_"
+		
+
+			x = x+1
+		end #if
+	end #do
+	puts "Il y a #{x} _ dans tous les pseudos confondus"
+	return x 
+
+end 
+mails
+
+
+
