@@ -58,3 +58,11 @@ doll
 
 devises
 
+
+def cours_le_plus_haut   #parmi les m<6000
+	m = @my_hash.select {|monaie, montant| montant.tr("$","").to_f < 6000}
+	x = m.max_by {|monaie, montant| montant.tr("$","").to_f}
+	puts "Devise la plus élevée parmi celles dont les cours sont inférieurs à 6000 : #{x}"
+end
+
+cours_le_plus_haut
