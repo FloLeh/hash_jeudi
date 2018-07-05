@@ -74,3 +74,29 @@ aude2
 aude
 
 
+class String 
+    
+    def second_letter 
+        self[1, 1] 
+    end
+
+end
+
+def count_upcase
+  
+  x = 0 
+
+  @journalists_list.each do |journalist| 
+    result = journalist.second_letter 
+      
+      if ("A".."Z").cover? result
+        x = x + 1
+      end
+  
+  end
+
+puts "Il y a #{x} handles qui commencent par une majuscule"
+
+end
+
+count_upcase
