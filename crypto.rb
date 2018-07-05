@@ -42,6 +42,19 @@ puts "Il y a #{x} crypto contenant le mot coin"
 return x 
 
 end #mails
-
-doll2 
+doll2
 doll
+
+
+@my_hash = @monaie.zip(@montant).to_h
+
+
+ def devises
+
+ 	m = @my_hash.select {|monaie, montant| montant .tr("$","").to_f <6000}
+ 		 puts "Voici les devises, dont le cours est inférieur à 6000"
+ 		 m.each  {|monaie, montant| puts monaie} 
+ 	end
+
+devises
+
