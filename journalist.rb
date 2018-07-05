@@ -101,7 +101,20 @@ end
 
 count_upcase
 
-#code fabrice
+def mail
+	x=0
+	@journalists_list.each do |journalist|
+if (journalist.count "ABCDEFGHIJKLMNOPQRSTUVWXYZ") >0
+
+	x=x+1
+
+	end
+
+end
+puts "Il y a #{x} handles contiennent une majuscule"
+end
+mail
+
 
 
 def mails
