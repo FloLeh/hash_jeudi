@@ -20,7 +20,7 @@ def journalist_number
 
 	end
 
-puts "Nombres de handle contennant des numéros : #{x}"
+puts "Nombres de mails contennant des numéros : #{x}"
 
 end
 
