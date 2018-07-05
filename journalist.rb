@@ -122,3 +122,8 @@ mails
 
 
 
+def alphabetical_order
+	@journalists_list.sort
+end
+
+puts alphabetical_order
