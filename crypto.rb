@@ -14,3 +14,34 @@ def min_and_max
 end
 
 min_and_max
+
+
+def doll
+	x = 0
+
+	@monaie.each do |monaie| 
+		if monaie.count "coin"
+	
+		x = x+1
+	end #if
+end #do
+return x 
+
+end #mails
+def doll2
+	x = 0
+
+	@monaie.each do |monaie| 
+		if monaie.downcase.include? "coin"
+			x = x+1
+
+	end #if
+
+end #do
+puts "Il y a #{x} crypto contenant le mot coin"
+return x 
+
+end #mails
+
+doll2 
+doll

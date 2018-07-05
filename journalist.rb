@@ -42,7 +42,7 @@ journalists_with_numbers
 def aude
 	x = 0
 
-	@journalists_list.each do |journalist| #passe sur chaque élément "journalist" du tableau "@journalist"
+	@journalists_list.each do |journalist| 
 		if journalist.count "aude"
 		
 
@@ -55,7 +55,7 @@ end #mails
 def aude2
 	x = 0
 
-	@journalists_list.each do |journalist| #passe sur chaque élément "journalist" du tableau "@journalist"
+	@journalists_list.each do |journalist| 
 		if journalist.downcase.include? "aude"
 		
 
@@ -136,8 +136,7 @@ mails
 
 
 def alphabetical_order
-	puts "Classement par ordre alphabetique :"
-	puts @journalists_list.sort_by(&:downcase)
+	@journalists_list.sort
 end
 
-alphabetical_order
+puts alphabetical_order
